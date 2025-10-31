@@ -10,25 +10,28 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path="C:\\Users\\KEMAL\\Desktop\\Youtube\\token.env")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
-ANA_KLASOR = r"C:\Users\KEMAL\Desktop\Youtube"  # Çift backslash düzeltildi
+ANA_KLASOR = r"C:\Users\KEMAL\Desktop\Youtube"
 KAYNAK_DOSYA = os.path.join(ANA_KLASOR, "YouTube Kanalları.txt")
 HEDEF_KLASOR = os.path.join(ANA_KLASOR, "YouTube")
 
 GITHUB_USER = "SekoBes"
-GITHUB_REPO = "S5"  # Bu doğru mu? Hata mesajında "youtube-m3u8" görünüyor
+GITHUB_REPO = "S5"
 GIT_URL = f"https://{GITHUB_USER}:{GITHUB_TOKEN}@github.com/{GITHUB_USER}/{GITHUB_REPO}.git"
 
 # ===============================
 #  TÜRKÇE KARAKTER DESTEĞİ İLE DOSYA ADI TEMİZLEME
 # ===============================
 def temizle_dosya_adi(kanal_adi):
+    # Türkçe karakterleri koru, sadece geçersiz karakterleri temizle
     temiz_adi = re.sub(r'[<>:"/\\|?*]', '_', kanal_adi)
+    # Birden fazla alt çizgiyi tekilleştir
     temiz_adi = re.sub(r'_+', '_', temiz_adi)
+    # Baştaki ve sondaki boşlukları ve alt çizgileri temizle
     temiz_adi = temiz_adi.strip(' _')
     return temiz_adi
 
 # ===============================
-#  M3U8 OLUŞTURMA (Aynı kalıyor)
+#  M3U8 OLUŞTURMA
 # ===============================
 os.makedirs(HEDEF_KLASOR, exist_ok=True)
 
@@ -41,6 +44,7 @@ for i in range(len(satirlar)):
         try:
             extinf = satirlar[i]
             url = satirlar[i + 1]
+            # Boş satırları ve yorum satırlarını atla
             if url.strip() and not url.startswith('#'):
                 kanallar.append((extinf, url))
         except IndexError:
@@ -91,65 +95,42 @@ for extinf, url in kanallar:
 print(f"\n🎯 İşlem tamamlandı: {basari_sayisi} başarılı, {hata_sayisi} hatalı")
 
 # ===============================
-#  GITHUB'A GÖNDERME - BASİT VE GÜVENLİ VERSİYON
+#  GITHUB'A GÖNDERME (PUSH)
 # ===============================
 print("\nGitHub'a gönderiliyor...")
 
 try:
-    # ÖNCE: Mevcut değişiklikleri commit et
-    print("Değişiklikler ekleniyor...")
-    subprocess.run(["git", "-C", ANA_KLASOR, "add", "."], check=True)
+    # Git konfigürasyonunu kontrol et
+    result = subprocess.run(["git", "-C", ANA_KLASOR, "status"], 
+                          capture_output=True, text=True, encoding='utf-8')
     
-    # Commit yap (değişiklik yoksa hata verme)
-    commit_result = subprocess.run(
-        ["git", "-C", ANA_KLASOR, "commit", "-m", "Otomatik m3u8 güncelleme"], 
-        capture_output=True, text=True, encoding='utf-8'
-    )
-    
-    if commit_result.returncode == 0:
-        print("✅ Commit oluşturuldu")
+    if result.returncode != 0:
+        print("❌ Bu dizin bir Git deposu değil veya Git hatası:", result.stderr)
     else:
-        if "nothing to commit" in commit_result.stdout or "nothing to commit" in commit_result.stderr:
-            print("ℹ️  Commit gerekmiyor (değişiklik yok)")
-        else:
-            print(f"⚠️  Commit hatası: {commit_result.stderr}")
-    
-    # SONRA: Pull yap (merge ile, rebase olmadan)
-    print("Uzak değişiklikler çekiliyor...")
-    pull_result = subprocess.run(
-        ["git", "-C", ANA_KLASOR, "pull", "--no-rebase", GIT_URL, "main"], 
-        capture_output=True, text=True, encoding='utf-8'
-    )
-    
-    if pull_result.returncode == 0:
-        print("✅ Uzak değişiklikler başarıyla çekildi")
-    else:
-        print(f"⚠️  Pull hatası: {pull_result.stderr}")
-        # Basit çözüm: Doğrudan push deneyelim
-        print("Doğrudan push denemesi...")
-    
-    # EN SON: Push yap
-    print("GitHub'a push yapılıyor...")
-    push_result = subprocess.run(
-        ["git", "-C", ANA_KLASOR, "push", GIT_URL, "main"], 
-        capture_output=True, text=True, encoding='utf-8'
-    )
-    
-    if push_result.returncode == 0:
-        print("🚀 GitHub'a başarıyla push yapıldı!")
-    else:
-        print(f"❌ Push hatası: {push_result.stderr}")
+        # Değişiklikleri ekle
+        subprocess.run(["git", "-C", ANA_KLASOR, "add", "."], check=True)
         
-        # Son çare: Force push (DİKKAT: Bu diğer değişiklikleri siler!)
-        print("Force push denemesi (son çare)...")
-        force_push = subprocess.run(
-            ["git", "-C", ANA_KLASOR, "push", "--force", GIT_URL, "main"], 
-            capture_output=True, text=True, encoding='utf-8'
-        )
-        if force_push.returncode == 0:
-            print("🚀 GitHub'a force push başarılı!")
+        # Commit oluştur (değişiklik yoksa hata vermesin)
+        commit_result = subprocess.run(["git", "-C", ANA_KLASOR, "commit", "-m", "Otomatik m3u8 güncelleme"], 
+                                     capture_output=True, text=True, encoding='utf-8')
+        
+        if commit_result.returncode == 0:
+            print("✅ Commit oluşturuldu")
         else:
-            print(f"❌ Force push da başarısız: {force_push.stderr}")
+            if "nothing to commit" in commit_result.stdout or "nothing to commit" in commit_result.stderr:
+                print("ℹ️  Commit gerekmiyor (değişiklik yok)")
+            else:
+                print(f"⚠️  Commit hatası: {commit_result.stderr}")
+        
+        # GitHub'a push yap
+        print("GitHub'a push yapılıyor...")
+        push_result = subprocess.run(["git", "-C", ANA_KLASOR, "push", GIT_URL, "main"], 
+                                   capture_output=True, text=True, encoding='utf-8')
+        
+        if push_result.returncode == 0:
+            print("🚀 GitHub'a başarıyla push yapıldı!")
+        else:
+            print(f"❌ Push hatası: {push_result.stderr}")
             
 except subprocess.CalledProcessError as e:
     print(f"❌ Git işlemi başarısız: {e}")
@@ -157,6 +138,3 @@ except subprocess.CalledProcessError as e:
         print(f"Hata detayı: {e.stderr}")
 except Exception as e:
     print(f"❌ Beklenmeyen hata: {e}")
-
-# Repository URL kontrolü
-print(f"\n🔍 Kullanılan Repository: {GIT_URL.split('@')[1] if '@' in GIT_URL else GIT_URL}")
