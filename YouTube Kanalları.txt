@@ -1,0 +1,38 @@
+#EXTINF:-1 tvg-name="A PARA HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/APARA.png",A PARA
+https://www.youtube.com/@apara/live
+#EXTINF:-1 tvg-name="VAV TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/VAV.png",VAV TV
+https://www.youtube.com/channel/UCmMPdW0rtbEI_XyIsMlMnqg/live
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TAY.png",TAY TV
+https://www.youtube.com/channel/UCjkRA7KEdp7PDKDUs396XHg/live
+#EXTINF:-1,KRALPOP RADYO
+https://www.youtube.com/watch?v=5J-w9AHKHsc/live
+#EXTINF:-1,KRAL FM
+https://www.youtube.com/watch?v=A49bKX8gb-8/live
+#EXTINF:-1,RADYO 45'LİK
+https://www.youtube.com/watch?v=dk_uf4o2atY/live
+#EXTINF:-1,SLOW TÜRK
+https://www.youtube.com/watch?v=tWTHF0r2oEw/live
+#EXTINF:-1,SLOW RADYO
+https://www.youtube.com/channel/UCOuS0bdPXbSPcX52SCBV3LQ/live
+#EXTINF:-1,KALP FM
+https://www.youtube.com/watch?v=_V8XXGBh_kw/live
+#EXTINF:-1,RADYO 7
+https://www.youtube.com/@onlineradio7/live
+#EXTINF:-1,RADYO 7 AKUSTİK TÜRKÜLER
+https://www.youtube.com/@radyoyedi/live
+#EXTINF:-1,RADYO DAMAR
+https://www.youtube.com/watch?v=gbNBCvSkFlg/live
+#EXTINF:-1,RADYO DRAM
+https://www.youtube.com/watch?v=hEuPzfboeEA/live
+#EXTINF:-1,PLATONİK FM
+https://www.youtube.com/@platonik_fmm/live
+#EXTINF:-1,DERT FM
+https://www.youtube.com/watch?v=RxpV1x_ED5o/live
+#EXTINF:-1,RELAXING 1
+https://www.youtube.com/watch?v=SjkGdCuT8zg/live
+#EXTINF:-1,RELAXING II
+https://www.youtube.com/watch?v=j8WpdXz0Blg/live
+#EXTINF:-1,ŞÖMİNE 1
+https://www.youtube.com/watch?v=soSXsuGVkqc/live
+#EXTINF:-1,ŞÖMİNE II
+https://www.youtube.com/watch?v=mKCieTImjvU/live
