@@ -59,7 +59,7 @@ for extinf, url in kanallar:
         continue
         
     kanal_adi = match.group(1).strip()
-    dosya_adi = temizle_dosya_adi(kanal_adi) + ".m3u8"
+    dosya_adi = re.sub(r'[^A-Za-z0-9]+', '_', kanal_adi) + ".m3u8"
     hedef_yol = os.path.join(HEDEF_KLASOR, dosya_adi)
 
     print(f"🔹 {kanal_adi} işleniyor...")
