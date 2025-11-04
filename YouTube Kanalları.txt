@@ -1,282 +1,117 @@
-#[
-  {
-    "type": "channel",
-    "name": "24 TV",
-    "slug": "24tv",
-    "id": "UCN7VYCsI4Lx1-J4_BtjoWUA",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "A Haber",
-    "slug": "ahaber",
-    "id": "UCKQhfw-lzz0uKnE1fY1PsAA",
-    "subfolder": "dizi"
-  },
-  {
-    "type": "channel",
-    "name": "A Para",
-    "slug": "apara",
-    "id": "UCzrGg6iyRDuUSnO0cQ5oLcA",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "A Spor",
-    "slug": "aspor",
-    "id": "UCJElRTCNEmLemgirqvsW63Q",
-    "subfolder": "spor"
-  },
-  {
-    "type": "channel",
-    "name": "Akit TV",
-    "slug": "akit-tv",
-    "id": "UCbaLyHJp6S9Lsj6oT9aJsQw",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "beIN Sports Haber",
-    "slug": "bein-sports-haber",
-    "id": "UCPe9vNjHF1kEExT5kHwc7aw",
-    "subfolder": "spor"
-  },
-  {
-    "type": "channel",
-    "name": "Bengütürk",
-    "slug": "benguturk",
-    "id": "UChNgvcVZ_ggDdZ0zCcuuzFw",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Bizim Ev TV",
-    "slug": "bizimevtv",
-    "id": "UCIHMK8qtjB_GNuXmeex6i8g",
-    "subfolder": "diger"
-  },
-  {
-    "type": "channel",
-    "name": "Bloomberg HT",
-    "slug": "bloomberght",
-    "id": "UCApLxl6oYQafxvykuoC2uxQ",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "CNBC-e",
-    "slug": "cnbc-e",
-    "id": "UCaO-M1dXacMwtyg0Pvovk4w",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "CNN Türk",
-    "slug": "cnnturk",
-    "id": "UCV6zcRug6Hqp1UX_FdyUeBg",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Diyanet Çocuk",
-    "slug": "diyanet-cocuk",
-    "id": "UCCfTktnzWK__FUN4gj0zIpA",
-    "subfolder": "cocuk"
-  },
-  {
-    "type": "channel",
-    "name": "Diyanet TV",
-    "slug": "diyanet-tv",
-    "id": "UC3d1AdmvAP6Jq16-WpD086g",
-    "subfolder": "dini"
-  },
-  {
-    "type": "channel",
-    "name": "Ekotürk",
-    "slug": "ekoturk",
-    "id": "UCAGVKxpAKwXMWdmcHbrvcwQ",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Flash Haber",
-    "slug": "flash-haber",
-    "id": "UCNcjCb2RnA3eMMhTZSxZu3A",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "FM TV",
-    "slug": "fmtv",
-    "id": "UC8rH0jVvMy_NzU_syP444Wg",
-    "subfolder": "dini"
-  },
-  {
-    "type": "channel",
-    "name": "Haber Global",
-    "slug": "haberglobal",
-    "id": "UCtc-a9ZUIg0_5HpsPxEO7Qg",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Habertürk",
-    "slug": "haberturk",
-    "id": "UCn6dNfiRE_Xunu7iMyvD7AA",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Halk TV",
-    "slug": "halktv",
-    "id": "UCf_ResXZzE-o18zACUEmyvQ",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "HT Spor",
-    "slug": "htspor",
-    "id": "UCK3mI2lsk3LSo8PBUc8JTSw",
-    "subfolder": "spor"
-  },
-  {
-    "type": "channel",
-    "name": "Kral Şakir",
-    "slug": "kral-sakir",
-    "id": "UCtQvrl_0E7ozHb_c8Fy4oWA",
-    "subfolder": "cocuk"
-  },
-  {
-    "type": "channel",
-    "name": "Kral Şakir (CN)",
-    "slug": "kral-sakir-cn",
-    "id": "UCehmwSZGPod7JFbHJspmxzQ",
-    "subfolder": "cocuk"
-  },
-  {
-    "type": "channel",
-    "name": "KRT TV",
-    "slug": "krttv",
-    "id": "UCVKWwHoLwUMMa80cu_1uapA",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Lider Haber",
-    "slug": "lider-haber",
-    "id": "UCgH3Vo5DVMsrbDSUoSecm0Q",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Niloya",
-    "slug": "niloya",
-    "id": "UCKFIi1uWM9BCMb7O_GyvBsQ",
-    "subfolder": "cocuk"
-  },
-  {
-    "type": "channel",
-    "name": "NTV",
-    "slug": "ntv",
-    "id": "UC9TDTjbOjFB9jADmPhSAPsw",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Sözcü TV",
-    "slug": "sozcu-tv",
-    "id": "UCOulx_rep5O4i9y6AyDqVvw",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Tay TV",
-    "slug": "tay-tv",
-    "id": "UCjkRA7KEdp7PDKDUs396XHg",
-    "subfolder": "spor"
-  },
-  {
-    "type": "channel",
-    "name": "Telenews TV",
-    "slug": "telenews-tv",
-    "id": "UC5UAlie8kvZPDfHoT0WpHxQ",
-    "subfolder": "yerel"
-  },
-  {
-    "type": "channel",
-    "name": "TGRT Belgesel",
-    "slug": "tgrt-belgesel",
-    "id": "UCkQV7uH1Otv47CZz6tD3jGQ",
-    "subfolder": "diger"
-  },
-  {
-    "type": "channel",
-    "name": "TGRT Haber",
-    "slug": "tgrt-haber",
-    "id": "UCzgrZ-CndOoylh2_e72nSBQ",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "TRT Haber",
-    "slug": "trthaber",
-    "id": "UCBgTP2LOFVPmq15W-RH-WXA",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "TV 100",
-    "slug": "tv100",
-    "id": "UCndsdUW_oPLqpQJY9J8oIRg",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "TVNET",
-    "slug": "tvnet",
-    "id": "UC8rh34IlJTN0lDZlTwzWzjg",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Ulusal Kanal",
-    "slug": "ulusal-kanal",
-    "id": "UC6T0L26KS1NHMPbTwI1L4Eg",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Ülke TV",
-    "slug": "ulke-tv",
-    "id": "UCi65FGbYYj-OzJm2luB_fNQ",
-    "subfolder": "haber"
-  },
-  {
-    "type": "channel",
-    "name": "Yedi Numara",
-    "slug": "yedi-numara",
-    "id": "UC0GKelxahF1nHwKyGhfJVYA",
-    "subfolder": "dizi"
-  },
-  {
-    "type": "video",
-    "name": "Kral Pop",
-    "slug": "kral-pop",
-    "id": "GuFTuKoXepw",
-    "subfolder": "diger"
-  },
-  {
-    "type": "channel",
-    "name": "Semerkand TV",
-    "slug": "semerkand-tv",
-    "id": "UCy4NY-cswicIclx2XKqe5Kg",
-    "subfolder": "dini"
-  },
-  {
-    "type": "channel",
-    "name": "Vav TV",
-    "slug": "vav-tv",
-    "id": "UCmMPdW0rtbEI_XyIsMlMnqg",
-    "subfolder": "dini"
-  }
-]
+
+
+
+#EXTINF:-1 tvg-name="A HABER HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/AHABER.png",A HABER
+https://www.youtube.com/channel/UCKQhfw-lzz0uKnE1fY1PsAA/live
+#EXTINF:-1 tvg-name="NTV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/NTV.png",NTV
+https://www.youtube.com/channel/UC9TDTjbOjFB9jADmPhSAPsw/live
+#EXTINF:-1 tvg-name="CNN TÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/CNNTURK.png",CNN TÜRK
+https://www.youtube.com/channel/UCV6zcRug6Hqp1UX_FdyUeBg/live
+#EXTINF:-1 tvg-name="HABERTÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HABERTURK.png",HABER TÜRK
+https://www.youtube.com/channel/UCn6dNfiRE_Xunu7iMyvD7AA/live
+#EXTINF:-1 tvg-name="24 HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/24TV.png",24
+https://www.youtube.com/channel/UCN7VYCsI4Lx1-J4_BtjoWUA/live
+#EXTINF:-1 tvg-name="HABER GLOBAL HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HABERGLOBAL.png",HABER GLOBAL
+https://www.youtube.com/channel/UCtc-a9ZUIg0_5HpsPxEO7Qg/live
+#EXTINF:-1 tvg-name="ÜLKE TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULKE.png",ÜLKE TV
+https://www.youtube.com/channel/UCi65FGbYYj-OzJm2luB_fNQ/live
+#EXTINF:-1 tvg-name="AKİT TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/AKIT.png",AKİT TV
+https://www.youtube.com/channel/UCbaLyHJp6S9Lsj6oT9aJsQw/live
+#EXTINF:-1 tvg-name="TVNET HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TVNET.png",TVNET
+https://www.youtube.com/channel/UC8rh34IlJTN0lDZlTwzWzjg/live
+#EXTINF:-1 tvg-name="TRT HABER HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TRTHABER.png",TRT HABER
+https://www.youtube.com/channel/UCBgTP2LOFVPmq15W-RH-WXA/live
+#EXTINF:-1 tvg-name="TGRT HABER HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TGRTHABER.png",TGRT HABER
+https://www.youtube.com/channel/UCzgrZ-CndOoylh2_e72nSBQ/live
+#EXTINF:-1 tvg-name="TV100.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TV100.png",TV100
+https://www.youtube.com/channel/UCndsdUW_oPLqpQJY9J8oIRg/live
+#EXTINF:-1 tvg-name="TELENEWS.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TELENEWS.png",TELENEWS
+https://www.youtube.com/channel/UC5UAlie8kvZPDfHoT0WpHxQ/live
+#EXTINF:-1 tvg-name="EKOL TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOL.png",EKOL TV
+https://www.youtube.com/channel/UCmMPdW0rtbEI_XyIsMlMnqg/live
+#EXTINF:-1 tvg-name="EKOTÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOTURK.png",EKOTÜRK
+https://www.youtube.com/channel/UCAGVKxpAKwXMWdmcHbrvcwQ/live
+#EXTINF:-1 tvg-name="A PARA HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/APARA.png",A PARA
+https://www.youtube.com/channel/UCzrGg6iyRDuUSnO0cQ5oLcA/live
+#EXTINF:-1 tvg-name="CNBC-E.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/CNBC-E.png",CNBC-E
+https://www.youtube.com/channel/UCaO-M1dXacMwtyg0Pvovk4w/live
+#EXTINF:-1 tvg-name="BLOOMBERG HT HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BLOOMBERGHT.png",BLOOMBERG HT
+https://www.youtube.com/channel/UCApLxl6oYQafxvykuoC2uxQ/live
+#EXTINF:-1 tvg-name="VAV TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/VAV.png",VAV TV
+https://www.youtube.com/channel/UCmMPdW0rtbEI_XyIsMlMnqg/live
+#EXTINF:-1 tvg-name="SEMERKAND HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SEMERKAND.png",SEMERKAND
+https://www.youtube.com/channel/UCy4NY-cswicIclx2XKqe5Kg/live
+#EXTINF:-1 tvg-name="FM TV.tr",FM TV
+https://www.youtube.com/channel/UC8rH0jVvMy_NzU_syP444Wg/live
+#EXTINF:-1 tvg-name="Saudi Quran TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALQURAN.png",AL QURAN AL KAREEM
+https://www.youtube.com/channel/UCfBw_uwZb_oFLyVsjWk6owQ/live
+#EXTINF:-1 tvg-name="Saudi Sunnah TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALSUNNAH.png",AL SUNNAH AL NABAWIYAH
+https://www.youtube.com/channel/UCWainKMJPyXikjekccFf3NA/live
+#EXTINF:-1 tvg-name="DİYANET ÇOCUK" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/DIYANETCOCUK.png",DİYANET ÇOCUK
+https://www.youtube.com/channel/UCCfTktnzWK__FUN4gj0zIpA/live
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/NILOYA.png",NİLOYA
+https://www.youtube.com/channel/UCKFIi1uWM9BCMb7O_GyvBsQ/live
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KS.png",KRAL ŞAKİR
+https://www.youtube.com/channel/UCtQvrl_0E7ozHb_c8Fy4oWA/live
+#EXTINF:-1 tvg-name="KRALPOP TV" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KRALPOP.png",KRALPOP TV
+https://www.youtube.com/watch?v=GuFTuKoXepw/live
+#EXTINF:-1 tvg-name="A SPOR HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ASPOR.png",A SPOR
+https://www.youtube.com/channel/UCJElRTCNEmLemgirqvsW63Q/live
+#EXTINF:-1 tvg-name="HT SPOR.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HTSPOR.png",HT SPOR
+https://www.youtube.com/channel/UCK3mI2lsk3LSo8PBUc8JTSw/live
+#EXTINF:-1 tvg-name="Ekol Sports.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOLSPORTS.png",EKOL SPORTS
+https://www.youtube.com/channel/UCjr2WQ5a20B5YyUY7qaa2sw/live
+#EXTINF:-1 tvg-name="Sıfır TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SIFIR.png",SIFIR TV
+https://www.youtube.com/channel/UCDX7Vf8VLBHdC-HZtKG9gOQ/live
+#EXTINF:-1 tvg-name="beIN SPORTS HABER.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BSHABER.png",beIN SPORTS HABER
+https://www.youtube.com/channel/UCPe9vNjHF1kEExT5kHwc7aw/live
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TAY.png",TAY TV
+https://www.youtube.com/channel/UCjkRA7KEdp7PDKDUs396XHg/live
+#EXTINF:-1 tvg-name="TGRT Belgesel.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TGRTBELGESEL.png" ,TGRT BELGESEL
+https://www.youtube.com/channel/UCkQV7uH1Otv47CZz6tD3jGQ/live
+#EXTINF:-1 tvg-name="BENGÜTÜRK.tr tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BENGUTURK.png",BENGÜ TÜRK
+https://www.youtube.com/channel/UChNgvcVZ_ggDdZ0zCcuuzFw/live
+#EXTINF:-1 tvg-name="FLASH HABER.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/FLASHHABER.png",FLASH HABER
+https://www.youtube.com/channel/UCNcjCb2RnA3eMMhTZSxZu3A/live
+#EXTINF:-1 tvg-name="Lider Haber Tv.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/LIDERHABER.png",LİDER HABER
+https://www.youtube.com/channel/UCgH3Vo5DVMsrbDSUoSecm0Q/live
+#EXTINF:-1 tvg-name="ULUSAL KANAL.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULUSAL.png",ULUSAL KANAL
+https://www.youtube.com/channel/UC6T0L26KS1NHMPbTwI1L4Eg/live
+#EXTINF:-1 tvg-name="KRT TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KRT.png",KRT TV
+https://www.youtube.com/channel/UCVKWwHoLwUMMa80cu_1uapA/live
+#EXTINF:-1 tvg-name="ULUSAL KANAL.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULUSAL.png",ULUSAL KANAL
+https://www.youtube.com/channel/UC6T0L26KS1NHMPbTwI1L4Eg/live
+#EXTINF:-1 tvg-name="SÖZCÜ TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SZC.png",SÖZCÜ TV
+https://www.youtube.com/channel/UCOulx_rep5O4i9y6AyDqVvw/live
+#EXTINF:-1,KRALPOP RADYO
+https://www.youtube.com/watch?v=5J-w9AHKHsc/live
+#EXTINF:-1,KRAL FM
+https://www.youtube.com/watch?v=A49bKX8gb-8/live
+#EXTINF:-1,RADYO 45'LİK
+https://www.youtube.com/watch?v=dk_uf4o2atY/live
+#EXTINF:-1,SLOW TÜRK
+https://www.youtube.com/watch?v=tWTHF0r2oEw/live
+#EXTINF:-1,SLOW RADYO
+https://www.youtube.com/channel/UCOuS0bdPXbSPcX52SCBV3LQ/live
+#EXTINF:-1,KALP FM
+https://www.youtube.com/watch?v=_V8XXGBh_kw/live
+#EXTINF:-1,RADYO 7
+https://www.youtube.com/@onlineradio7/live
+#EXTINF:-1,RADYO 7 AKUSTİK TÜRKÜLER
+https://www.youtube.com/@radyoyedi/live
+#EXTINF:-1,RADYO DAMAR
+https://www.youtube.com/watch?v=gbNBCvSkFlg/live
+#EXTINF:-1,RADYO DRAM
+https://www.youtube.com/watch?v=hEuPzfboeEA/live
+#EXTINF:-1,PLATONİK FM
+https://www.youtube.com/@platonik_fmm/live
+#EXTINF:-1,DERT FM
+https://www.youtube.com/watch?v=RxpV1x_ED5o/live
+#EXTINF:-1,RELAXING 1
+https://www.youtube.com/watch?v=SjkGdCuT8zg/live
+#EXTINF:-1,RELAXING II
+https://www.youtube.com/watch?v=j8WpdXz0Blg/live
+#EXTINF:-1,ŞÖMİNE 1
+https://www.youtube.com/watch?v=soSXsuGVkqc/live
+#EXTINF:-1,ŞÖMİNE II
+https://www.youtube.com/watch?v=mKCieTImjvU/live
