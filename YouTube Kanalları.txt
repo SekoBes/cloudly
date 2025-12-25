@@ -22,8 +22,6 @@ http://www.youtube.com/channel/UCBgTP2LOFVPmq15W-RH-WXA/live
 http://www.youtube.com/channel/UCzgrZ-CndOoylh2_e72nSBQ/live
 #EXTINF:-1 tvg-name="TV100.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TV100.png",TV100
 http://www.youtube.com/channel/UCndsdUW_oPLqpQJY9J8oIRg/live
-#EXTINF:-1 tvg-name="TELENEWS.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TELENEWS.png",TELENEWS
-http://www.youtube.com/channel/UC5UAlie8kvZPDfHoT0WpHxQ/live
 #EXTINF:-1 tvg-name="EKOL TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOL.png",EKOL TV
 http://www.youtube.com/channel/UCmMPdW0rtbEI_XyIsMlMnqg/live
 #EXTINF:-1 tvg-name="EKOTÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOTURK.png",EKOTÜRK
@@ -38,8 +36,6 @@ http://www.youtube.com/channel/UCApLxl6oYQafxvykuoC2uxQ/live
 http://www.youtube.com/channel/UCmMPdW0rtbEI_XyIsMlMnqg/live
 #EXTINF:-1 tvg-name="SEMERKAND HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SEMERKAND.png",SEMERKAND
 http://www.youtube.com/channel/UCy4NY-cswicIclx2XKqe5Kg/live
-#EXTINF:-1 tvg-name="FM TV.tr",FM TV
-http://www.youtube.com/channel/UC8rH0jVvMy_NzU_syP444Wg/live
 #EXTINF:-1 tvg-name="Saudi Quran TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALQURAN.png",AL QURAN AL KAREEM
 http://www.youtube.com/channel/UCfBw_uwZb_oFLyVsjWk6owQ/live
 #EXTINF:-1 tvg-name="Saudi Sunnah TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALSUNNAH.png",AL SUNNAH AL NABAWIYAH
@@ -54,8 +50,6 @@ http://www.youtube.com/watch?v=GuFTuKoXepw/live
 http://www.youtube.com/channel/UCJElRTCNEmLemgirqvsW63Q/live
 #EXTINF:-1 tvg-name="HT SPOR.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HTSPOR.png",HT SPOR
 http://www.youtube.com/channel/UCK3mI2lsk3LSo8PBUc8JTSw/live
-#EXTINF:-1 tvg-name="Ekol Sports.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOLSPORTS.png",EKOL SPORTS
-http://www.youtube.com/channel/UCjr2WQ5a20B5YyUY7qaa2sw/live
 #EXTINF:-1 tvg-name="Sıfır TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SIFIR.png",SIFIR TV
 http://www.youtube.com/channel/UCDX7Vf8VLBHdC-HZtKG9gOQ/live
 #EXTINF:-1 tvg-name="beIN SPORTS HABER.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BSHABER.png",beIN SPORTS HABER
