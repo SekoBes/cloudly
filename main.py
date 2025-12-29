@@ -42,20 +42,54 @@ VERBOSE = False
 def create_session():
     """Create the best available HTTP session"""
     if CLOUDSCRAPER_AVAILABLE:
-        print("✓ Using cloudscraper for JavaScript challenge bypass")
-        scraper = cloudscraper.create_scraper(
-            browser={
-                'browser': 'chrome',
-                'platform': 'windows',
-                'mobile': False
-            },
-            delay=10,
-            # Add more aggressive challenge solving
-            captcha={
-                'provider': 'return_response'
-            }
-        )
-        return scraper, 'cloudscraper'
+        print("✓ Using enhanced cloudscraper for JavaScript challenge bypass")
+        
+        # Use the zinzied/cloudscraper enhanced fork features
+        try:
+            scraper = cloudscraper.create_scraper(
+                browser='chrome',
+                debug=False,
+                # Enhanced bypass features (zinzied fork)
+                enable_tls_fingerprinting=True,
+                enable_tls_rotation=True,
+                enable_anti_detection=True,
+                enable_enhanced_spoofing=True,
+                spoofing_consistency_level='medium',
+                enable_intelligent_challenges=True,
+                enable_adaptive_timing=True,
+                behavior_profile='focused',  # casual, focused, research, mobile
+                enable_ml_optimization=True,
+                enable_enhanced_error_handling=True,
+                # Stealth mode
+                enable_stealth=True,
+                stealth_options={
+                    'min_delay': 1.5,
+                    'max_delay': 4.0,
+                    'human_like_delays': True,
+                    'randomize_headers': True,
+                    'browser_quirks': True,
+                    'simulate_viewport': True,
+                    'behavioral_patterns': True
+                },
+                # Session management
+                session_refresh_interval=3600,
+                auto_refresh_on_403=True,
+                max_403_retries=3
+            )
+            print("  → Enhanced features enabled: TLS fingerprinting, anti-detection, ML optimization")
+            return scraper, 'cloudscraper-enhanced'
+        except TypeError:
+            # Fallback to basic cloudscraper if enhanced features not available
+            print("  → Using basic cloudscraper (enhanced fork not detected)")
+            scraper = cloudscraper.create_scraper(
+                browser={
+                    'browser': 'chrome',
+                    'platform': 'windows',
+                    'mobile': False
+                },
+                delay=10
+            )
+            return scraper, 'cloudscraper-basic'
     elif CURL_CFFI_AVAILABLE:
         print("✓ Using curl_cffi for advanced challenge bypass")
         # curl_cffi uses a different interface

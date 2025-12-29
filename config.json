@@ -11,12 +11,12 @@ on:
     branches:
       - main
     paths:
-      - 'turkish.json'
+      - 'config.json'
       - 'main.py'
       - '.github/workflows/turkish.yml'
 
 env:
-  CONFIG_FILE: turkish.json
+  CONFIG_FILE: config.json
   OUTPUT_FOLDER: TR
 
 jobs:
