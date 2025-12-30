@@ -1,0 +1,12 @@
+# Script ve ayar dosyaları
+YouTube.py
+YouTube.bat
+YouTube Kanalları.txt
+token.env
+
+# Diğer her şeyi görmezden gel
+*
+
+# AMA YouTube klasörü KALSIN
+!YouTube/
+!YouTube/**
