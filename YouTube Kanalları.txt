@@ -1,0 +1,6 @@
+#EXTINF:-1 tvg-name="A PARA HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/APARA.png",A PARA
+http://www.youtube.com/channel/UCzrGg6iyRDuUSnO0cQ5oLcA/live
+#EXTINF:-1 tvg-name="Saudi Quran TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALQURAN.png",AL QURAN AL KAREEM
+http://www.youtube.com/channel/UCfBw_uwZb_oFLyVsjWk6owQ/live
+#EXTINF:-1 tvg-name="Saudi Sunnah TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALSUNNAH.png",AL SUNNAH AL NABAWIYAH
+http://www.youtube.com/watch?v=TpT8b8JFZ6E/live
