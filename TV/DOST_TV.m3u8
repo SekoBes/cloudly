@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Dost TV" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/DOST.png",DOST TV
+http://dost.stream.emsal.im/tv/live.m3u8

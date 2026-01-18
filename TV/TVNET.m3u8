@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TVNET HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TVNET.png",TVNET
+http://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8

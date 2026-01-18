@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TV8 International.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TV8INT.png",TV 8 INT
+https://162.212.179.32/dvrfl05/gin-tv8int/index.m3u8

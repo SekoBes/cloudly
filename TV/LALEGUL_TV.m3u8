@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Lalegül.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/LALEGUL.png",LALEGÜL TV
+http://lbl.netmedya.net/hls/lalegultv.m3u8

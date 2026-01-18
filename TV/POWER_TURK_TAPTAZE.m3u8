@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Power Türk Taptaze TV" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/POWERTURKTAPTAZE.png",POWER TÜRK TAPTAZE
+http://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/chunks.m3u8

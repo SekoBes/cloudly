@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="KANAL 7 AVRUPA" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KANAL7AVRUPA.png",KANAL 7 AVRUPA
+http://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8

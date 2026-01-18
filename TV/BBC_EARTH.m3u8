@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="BBC Earth.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BBCEARTH.png",BBC EARTH
+http://65.108.239.207:80/bbc/index.m3u8

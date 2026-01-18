@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/VIRGINRADIO.png",VIRGIN RADIO TV
+http://live02-seg.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8

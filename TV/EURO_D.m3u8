@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Euro D.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EUROD.png",EURO D
+http://live.duhnet.tv/S2/HLS_LIVE/eurodnp/track_4_1000/playlist.m3u8

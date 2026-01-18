@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="DUCKTV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/DUCK.png",DUCK TV
+http://88.212.15.19/live/test_duck_tv_hd_hevc/playlist.m3u8

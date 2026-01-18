@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/V2BEAT.png",V2BEAT
+http://abr.de1se01.v2beat.live/live/live6/chunks.m3u8

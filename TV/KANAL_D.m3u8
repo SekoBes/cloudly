@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="KANAL D HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KANALD.png",KANAL D
+http://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?ce=3&app=kanald_web

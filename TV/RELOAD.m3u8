@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1,RELOAD
+http://web.onair-radio.eu:1935/video/video/chunklist.m3u8

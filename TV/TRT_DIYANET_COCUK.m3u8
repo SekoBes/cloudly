@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TRT DIYANET COCUK.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TRTDIYANETCOCUK.png",TRT DİYANET ÇOCUK
+http://tv-trtdiyanetcocuk.medya.trt.com.tr/master_1440.m3u8

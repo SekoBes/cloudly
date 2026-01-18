@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TRT ÇOCUK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TRTCOCUK.png",TRT ÇOCUK
+http://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8

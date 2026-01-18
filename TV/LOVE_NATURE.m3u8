@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="LOVE NATURE HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/LOVENATURE.png",LOVE NATURE
+http://65.108.239.207:80/lovenature/index.m3u8

@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TYT TÜRK.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TYTTURK.png",TYT TÜRK
+http://cdn-tytturk.yayin.com.tr/tytturk/tracks-v1a1/mono.m3u8

@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="ULUSAL KANAL.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULUSAL.png",ULUSAL KANAL
+http://208.79.153.167/inim03/live1/ulusal_kanal/chunks.m3u8

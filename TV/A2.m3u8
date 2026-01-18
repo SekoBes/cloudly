@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="A2 HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/A2.png",A2
+http://89.187.191.41/A2-HD-TR/video.m3u8

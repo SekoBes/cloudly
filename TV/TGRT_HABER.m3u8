@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TGRT HABER HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TGRTHABER.png",TGRT HABER
+http://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_1080p.m3u8

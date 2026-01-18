@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Power Türk Slow" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/POWERTURKSLOW.png",POWER TÜRK SLOW
+http://listen.powerapp.com.tr/pturkslow/slow.smil/chunks.m3u8

@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="KRT TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KRT.png",KRT TV
+http://5.178.103.239:82/yt1/s/krttv.m3u8

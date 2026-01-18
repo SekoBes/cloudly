@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="FX HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/FX.png",FX
+http://saran-live.ercdn.net/fx/index.m3u8

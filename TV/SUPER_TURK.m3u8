@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SUPERTURK.png",SÜPER TÜRK
+http://75.119.144.48/SUPERTURK_TV_STREAM/index.m3u8

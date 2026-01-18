@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="A NEWS HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ANEWS.png",A NEWS
+http://trn03.tulix.tv/gt-anews/tracks-v1a1/mono.m3u8

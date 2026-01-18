@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="ÜLKE TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULKE.png",ÜLKE TV
+https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8

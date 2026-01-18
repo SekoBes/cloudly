@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Sıfır TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SIFIR.png",SIFIR TV
+http://ahr7chck.rocketcdn.com/sifirtv.stream/chunklist.m3u8

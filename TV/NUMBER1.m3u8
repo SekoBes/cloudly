@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="NUMBER1 TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/NR1.png",NUMBER1
+http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/chunklist_b400000.m3u8

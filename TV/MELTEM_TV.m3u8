@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="MELTEM TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/MELTEM.png",MELTEM TV
+http://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8

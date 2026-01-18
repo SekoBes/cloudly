@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Lider Haber Tv.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/LIDERHABER.png",LİDER HABER
+http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8

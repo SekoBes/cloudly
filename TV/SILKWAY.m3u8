@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SILKWAY.png",SILKWAY
+http://ikomg-kazakh.akamaized.net/kazakh/kazakh.m3u8

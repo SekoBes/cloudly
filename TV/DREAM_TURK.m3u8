@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="DREAM TÜRK.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/DREAMTURK.png",DREAM TÜRK
+http://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/track_4_1250/playlist.m3u8

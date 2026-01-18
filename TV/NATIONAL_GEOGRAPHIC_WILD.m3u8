@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="NATIONAL GEOGRAPHIC WILD HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/NATGEOWILD.png",NATIONAL GEOGRAPHIC WILD
+http://saran-live.ercdn.net/natgeowild/index.m3u8

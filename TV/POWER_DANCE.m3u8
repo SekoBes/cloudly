@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Power Dance" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/POWERDANCE.png",POWER DANCE
+http://listen.powerapp.com.tr/dance/dance.smil/chunks.m3u8

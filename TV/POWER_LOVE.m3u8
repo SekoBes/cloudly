@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Power Love" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/POWERLOVE.png",POWER LOVE
+http://listen.powerapp.com.tr/plove/love.smil/chunks.m3u8
