@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/4FUN.png",4FUN TV
-https://stream.4fun.tv:8888/hls/4f_high/index.m3u8

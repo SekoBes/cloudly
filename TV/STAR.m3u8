@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="STAR TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/STAR.png",STAR
-http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8

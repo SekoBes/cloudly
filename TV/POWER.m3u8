@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="POWER TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/POWER.png",POWER
-http://livetv.powerapp.com.tr/powerTV/powerhd.smil/chunklist_b4596000_sltur.m3u8

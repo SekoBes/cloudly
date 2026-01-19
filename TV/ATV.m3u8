@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="ATV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ATV.png",ATV
-http://95.174.71.114/TR-ATV/tracks-v1a1/mono.m3u8

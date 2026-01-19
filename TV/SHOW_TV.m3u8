@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="SHOW TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SHOW.png",SHOW TV
-http://95.174.71.114:80/TR-SHOW/index.m3u8

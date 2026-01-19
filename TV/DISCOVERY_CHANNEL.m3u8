@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="DISCOVERY CHANNEL HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/DC.png",DISCOVERY CHANNEL
-http://65.108.239.207:80/discovery/index.m3u8

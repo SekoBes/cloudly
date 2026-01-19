@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="FB TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/FBTV.png",FB TV
-http://fbtv.fenerbahce.org/fenerbahcetv.stream/chunklist.m3u8

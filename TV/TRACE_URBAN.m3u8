@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TRACEURBAN.png",TRACE URBAN
-http://151.80.18.177:86/Trace_Urban_HD/index.m3u8

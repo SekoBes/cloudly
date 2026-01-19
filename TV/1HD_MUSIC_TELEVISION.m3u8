@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/1HDM.png",1HD MUSIC TELEVISION
-http://91.247.68.229:8000/play/eee/index.m3u8
