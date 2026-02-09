@@ -85,7 +85,7 @@ def get_youtube_stream(url, max_retries=2):
                 print(f"   ↻ Yeniden deneme {attempt}/{max_retries}")
 
             cmd = [
-                'python', '-m', 'yt-dlp',  # 'yt-dlp' yerine bunu yazdık
+                'python', '-m', 'yt-dlp',
                 '--quiet',
                 '--no-warnings',
                 '--user-agent', user_agent,
@@ -101,19 +101,20 @@ def get_youtube_stream(url, max_retries=2):
                 stream_url = result.stdout.strip()
                 
                 cmd_info = [
-                    'python', '-m', 'yt-dlp',  # 'yt-dlp' yerine bunu yazdık
+                    'python', '-m', 'yt-dlp',
                     '--quiet',
                     '--no-warnings',
                     '--user-agent', user_agent,
                     '--print', '%(height)s',
                     '--no-playlist',
                     url
-                
+                ]
                 
                 result_info = subprocess.run(cmd_info, capture_output=True, text=True, check=True)
                 height = result_info.stdout.strip()
                 
                 return stream_url, f"{height}p" if height.isdigit() else "OK"
+ stream_url, f"{height}p" if height.isdigit() else "OK"
                 
         except subprocess.CalledProcessError as e:
             error_msg = e.stderr.strip() if e.stderr else "Bilinmeyen hata"
