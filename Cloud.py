@@ -137,7 +137,7 @@ def process_youtube_channels(youtube_channels_dict):
                 tasks.append({'name': name, 'url': url, 'extinf': extinf_line})
     total_youtube = len(tasks)
     processed = 0
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         future_to_channel = {executor.submit(get_youtube_stream, task['url']): task for task in tasks}
         for future in as_completed(future_to_channel):
             task = future_to_channel[future]
