@@ -1,0 +1,137 @@
+#EXTINF:-1 tvg-name="EKOTÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/EKOTURK.png",EKOTÜRK
+http://www.youtube.com/@EKOTURKTV/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/7NUMARA.png",7 NUMARA
+http://www.youtube.com/@YedinumaradizisiTRT/live
+
+#EXTINF:-1 tvg-name="VAV TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/VAV.png",VAV TV
+http://www.youtube.com/@vavtv/live
+
+#EXTINF:-1 tvg-name="Saudi Quran TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALQURAN.png",AL QURAN AL KAREEM
+http://www.youtube.com/@AlQuran4KOfficial/live
+
+#EXTINF:-1 tvg-name="Saudi Sunnah TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ALSUNNAH.png",AL SUNNAH AL NABAWIYAH
+http://www.youtube.com/watch?v=TpT8b8JFZ6E/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/DIYANETCOCUK.png",DİYANET ÇOCUK
+http://www.youtube.com/channel/UCCfTktnzWK__FUN4gj0zIpA/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/NILOYA.png",NİLOYA
+http://www.youtube.com/channel/UCKFIi1uWM9BCMb7O_GyvBsQ/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KRALPOP.png",KRAL AKUSTİK TV
+http://www.youtube.com/@kralmüzik/live
+
+#EXTINF:-1 tvg-name="beIN SPORTS HABER.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BSHABER.png",beIN SPORTS HABER
+http://www.youtube.com/@beINSPORTSTürkiye/live
+
+#EXTINF:-1 tvg-name="TGRT Belgesel.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TGRTBELGESEL.png",TGRT BELGESEL
+http://www.youtube.com/@tgrtbelgeseltv/live
+
+#EXTINF:-1 tvg-name="BİZİM EV TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BIZIMEV.png",BİZİMEV TV
+http://www.youtube.com/@bizimevtv2000/live
+
+#EXTINF:-1 tvg-name="A HABER HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/AHABER.png",A HABER
+http://www.youtube.com/@Ahaber/live
+
+#EXTINF:-1 tvg-name="A PARA HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/APARA.png",A PARA
+http://www.youtube.com/@apara/live
+
+#EXTINF:-1 tvg-name="CNN TÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/CNNTURK.png",CNN TÜRK
+http://www.youtube.com/@cnnturk/live
+
+#EXTINF:-1 tvg-name="NTV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/NTV.png",NTV
+http://www.youtube.com/@NTV/live
+
+#EXTINF:-1 tvg-name="HABERTÜRK HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HABERTURK.png",HABER TÜRK
+http://www.youtube.com/@haberturktv/live
+
+#EXTINF:-1 tvg-name="HABER GLOBAL HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HABERGLOBAL.png",HABER GLOBAL
+http://www.youtube.com/@haberglobal/live
+
+#EXTINF:-1 tvg-name="24 HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/24TV.png",24
+http://www.youtube.com/@YirmidortTV/live
+
+#EXTINF:-1 tvg-name="ÜLKE TV HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULKE.png",ÜLKE TV
+http://www.youtube.com/@ulketv/live
+
+#EXTINF:-1 tvg-name="TVNET HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TVNET.png",TVNET
+http://www.youtube.com/@TVNET/live
+
+#EXTINF:-1 tvg-name="TGRT HABER HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TGRTHABER.png",TGRT HABER
+http://www.youtube.com/@tgrthaber/live
+
+#EXTINF:-1 tvg-name="TV100.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/TV100.png",TV100
+http://www.youtube.com/@tv100/live
+
+#EXTINF:-1 tvg-name="BLOOMBERG HT HD.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BLOOMBERGHT.png",BLOOMBERG HT
+http://www.youtube.com/@bloomberght/live
+
+#EXTINF:-1 tvg-name="BENGÜTÜRK.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/BENGUTURK.png",BENGÜTÜRK
+http://www.youtube.com/@tvbenguturk/live
+
+#EXTINF:-1 tvg-name="FLASH HABER.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/FLASHHABER.png",FLASH HABER
+http://www.youtube.com/@FlashHaberTV/live
+
+#EXTINF:-1 tvg-name="Lider Haber Tv.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/LIDERHABER.png",LİDER HABER
+http://www.youtube.com/@liderhabertv/live
+
+#EXTINF:-1 tvg-name="ULUSAL KANAL.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ULUSAL.png",ULUSAL KANAL
+http://www.youtube.com/@ulusalkanalTV/live
+
+#EXTINF:-1 tvg-name="HALK TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/HALK.png",HALK TV
+http://www.youtube.com/@Halktvkanali/live
+
+#EXTINF:-1 tvg-name="SÖZCÜ TV.tr" tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/SZC.png",SÖZCÜ TV
+http://www.youtube.com/@Sozcutelevizyonu/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/ABC.png",ABC NEWS
+http://www.youtube.com/@ABCNews/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/KRALPOP.png",KRAL AKUSTİK RADYO
+http://www.youtube.com/watch?v=6He9sFxFv8Y/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/Logos/RADYOMADYO_SLOWTIME.png",SLOW TIME
+http://www.youtube.com/@radyodinle/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/7.png",RADYO 7 HİT TÜRKÜLER
+https://www.youtube.com/watch?v=IPladnqk0xE/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/7.png",RADYO 7 AKUSTİK TÜRKÜ
+http://www.youtube.com/@radyoyedi/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",AKUSTİK TÜRKÜLER
+http://www.youtube.com/watch?v=_qm_JqY-6OI/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",RADYO DAMAR
+http://www.youtube.com/watch?v=N1VogsSbe6M/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",RADYO DRAM
+http://www.youtube.com/watch?v=hEuPzfboeEA/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",PLATONİK FM
+http://www.youtube.com/@Canli-Radyo-Dinle/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",PLATONİK FM
+http://www.youtube.com/@Platonik_Radyo_Fm/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",DERT FM
+https://www.youtube.com/@dinlecanli/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",RELAXING I
+http://www.youtube.com/watch?v=SjkGdCuT8zg/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",RELAXING II
+http://www.youtube.com/watch?v=j8WpdXz0Blg/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",ŞÖMİNE I
+http://m.youtube.com/@FireJazzYT/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",ŞÖMİNE II
+http://www.youtube.com/watch?v=gyAaVni1CrA/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",ŞÖMİNE III
+http://m.youtube.com/@primefireplaces/live
+
+#EXTINF:-1 tvg-logo="https://sekobes.pythonanywhere.com/files/TVLogos/bos.png",ŞÖMİNE IIII
+https://www.youtube.com/watch?v=XM27wqUvlJM/live

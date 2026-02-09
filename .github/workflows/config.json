@@ -1,0 +1,17 @@
+{
+  "cloudflare": {
+    "account_id": "d4289159da9c4b68d2f6621eeeee0d0e",
+    "api_token": "V0uOoOqHjfx8o1Zq7DZ9CUecOob5Va00CmnKEqiX",
+    "worker_name": "tv",
+    "subdomain": "sekobes",
+    "worker_url": "https://tv.sekobes.workers.dev"
+  },
+  "pythonanywhere": {
+    "upload_url": "https://sekobes.pythonanywhere.com/upload",
+    "token": "sEkoBESQWERT3455"
+  },
+  "github": {
+    "upload_url": "https://github.com/SekoBes/S5",
+    "token": "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"
+  }
+}
