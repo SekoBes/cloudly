@@ -6,7 +6,6 @@ import subprocess
 import sys
 import time
 import re
-import random
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -72,61 +71,57 @@ def read_order_file(file_path):
     return order
 
 # ==================== YOUTUBE STREAM ALMA ====================
-# ... (Üst kısımlar senin orijinal kodunla birebir aynı) ...
-
-def get_youtube_stream(url, max_retries=2):
-    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+def get_youtube_stream_alternative(url, max_retries=3):
+    """Alternatif YouTube stream alma yöntemi"""
+    import yt_dlp
+    
+    ydl_opts = {
+        'quiet': True,
+        'no_warnings': True,
+        'extract_flat': False,
+        'force_generic_extractor': False,
+        'format': 'best[height<=720]/best[height<=480]/best',
+        'geo_bypass': True,
+        'geo_bypass_country': 'US',
+        'http_headers': {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-us,en;q=0.5',
+            'Accept-Encoding': 'gzip,deflate',
+            'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+            'Connection': 'keep-alive',
+        },
+        'socket_timeout': 30,
+        'extractor_args': {
+            'youtube': {
+                'player_client': ['android', 'web'],
+                'player_skip': ['configs', 'webpage'],
+            }
+        },
+    }
     
     for attempt in range(max_retries):
         try:
-            # RASTGELE BEKLEME: YouTube'u şaşırtmak için 2-5 sn arası bekle
-            wait_time = random.uniform(2, 5)
-            time.sleep(wait_time)
-            
-            if attempt > 0:
-                time.sleep(2)
-                print(f"   ↻ Yeniden deneme {attempt}/{max_retries}")
-
-            cmd = [
-                'yt-dlp',
-                '--quiet', '--no-warnings',
-                '--user-agent', user_agent,
-                '--format', 'best[height<=1080]',
-                '--get-url',
-                '--no-playlist',
-                '--geo-bypass',
-                '--sleep-requests', '1.5', # yt-dlp'nin kendi iç beklemesi
-                url
-            ]
-            
-            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-            
-            if result.stdout.strip():
-                stream_url = result.stdout.strip()
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                info = ydl.extract_info(url, download=False)
                 
-                # Bilgi alırken de rastgele kısa bir bekleme
-                time.sleep(random.uniform(1, 2))
+                if 'formats' in info:
+                    # En iyi formatı bul
+                    formats = [f for f in info['formats'] if f.get('height')]
+                    if formats:
+                        best_format = max(formats, key=lambda x: x.get('height', 0))
+                        stream_url = best_format['url']
+                        resolution = f"{best_format.get('height', '?')}p"
+                        return stream_url, resolution
+                    
+                    # Format yoksa direk URL'yi dene
+                    for format_key in ['url', 'webpage_url']:
+                        if format_key in info:
+                            return info[format_key], "OK"
                 
-                cmd_info = [
-                    'yt-dlp',
-                    '--quiet', '--no-warnings',
-                    '--user-agent', user_agent,
-                    '--print', '%(height)s',
-                    '--no-playlist',
-                    '--geo-bypass',
-                    url
-                ]
-                
-                try:
-                    result_info = subprocess.run(cmd_info, capture_output=True, text=True, check=True)
-                    height = result_info.stdout.strip()
-                except:
-                    height = "OK"
-                
-                return stream_url, f"{height}p" if height.isdigit() else "OK"
-
         except Exception as e:
-            continue
+            print(f"   Deneme {attempt+1}/{max_retries} başarısız: {str(e)[:50]}")
+            time.sleep(2)
     
     return None, None
 
@@ -139,7 +134,7 @@ def process_youtube_channels(youtube_channels_dict):
                 tasks.append({'name': name, 'url': url, 'extinf': extinf_line})
     total_youtube = len(tasks)
     processed = 0
-    with ThreadPoolExecutor(max_workers=1) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_channel = {executor.submit(get_youtube_stream, task['url']): task for task in tasks}
         for future in as_completed(future_to_channel):
             task = future_to_channel[future]
