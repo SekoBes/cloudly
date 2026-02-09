@@ -6,6 +6,7 @@ import subprocess
 import sys
 import time
 import re
+import random
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -73,20 +74,19 @@ def read_order_file(file_path):
 # ==================== YOUTUBE STREAM ALMA ====================
 # ... (Üst kısımlar senin orijinal kodunla birebir aynı) ...
 
-# ==================== YOUTUBE STREAM ALMA ====================
-# ... (Üst kısımlar, okuma fonksiyonları aynı kalıyor) ...
-
-# ==================== YOUTUBE STREAM ALMA ====================
 def get_youtube_stream(url, max_retries=2):
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     
     for attempt in range(max_retries):
         try:
+            # RASTGELE BEKLEME: YouTube'u şaşırtmak için 2-5 sn arası bekle
+            wait_time = random.uniform(2, 5)
+            time.sleep(wait_time)
+            
             if attempt > 0:
-                time.sleep(1)
+                time.sleep(2)
                 print(f"   ↻ Yeniden deneme {attempt}/{max_retries}")
 
-            # 1. ANA KOMUT: Stream linkini alır
             cmd = [
                 'yt-dlp',
                 '--quiet', '--no-warnings',
@@ -94,8 +94,8 @@ def get_youtube_stream(url, max_retries=2):
                 '--format', 'best[height<=1080]',
                 '--get-url',
                 '--no-playlist',
-                '--geo-bypass', # Coğrafi engeli aşmaya çalışır
-                '--extract-audio', # Bazı bot engellerini aşmak için stream yapısını zorlar
+                '--geo-bypass',
+                '--sleep-requests', '1.5', # yt-dlp'nin kendi iç beklemesi
                 url
             ]
             
@@ -104,14 +104,16 @@ def get_youtube_stream(url, max_retries=2):
             if result.stdout.strip():
                 stream_url = result.stdout.strip()
                 
-                # 2. BİLGİ KOMUTU: Çözünürlüğü alır (BURASI DA GÜNCELLENDİ)
+                # Bilgi alırken de rastgele kısa bir bekleme
+                time.sleep(random.uniform(1, 2))
+                
                 cmd_info = [
                     'yt-dlp',
                     '--quiet', '--no-warnings',
                     '--user-agent', user_agent,
                     '--print', '%(height)s',
                     '--no-playlist',
-                    '--geo-bypass', # Bilgi alırken de engeli aşması için eklendi
+                    '--geo-bypass',
                     url
                 ]
                 
@@ -119,12 +121,12 @@ def get_youtube_stream(url, max_retries=2):
                     result_info = subprocess.run(cmd_info, capture_output=True, text=True, check=True)
                     height = result_info.stdout.strip()
                 except:
-                    height = "OK" # Bilgi alınamazsa sistem çökmesin, OK yazsın
+                    height = "OK"
                 
                 return stream_url, f"{height}p" if height.isdigit() else "OK"
 
         except Exception as e:
-            continue # Hata olursa bir sonraki denemeye geçer
+            continue
     
     return None, None
 
