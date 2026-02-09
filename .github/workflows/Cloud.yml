@@ -2,9 +2,8 @@ name: IPTV Otomatik Guncelleme
 
 on:
   schedule:
-    # Her 4 saatte bir (00:00, 04:00, 08:00 vb. UTC saatiyle)
     - cron: '0 */4 * * *'
-  workflow_dispatch: # Manuel çalıştırma butonu ekler
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,10 +19,8 @@ jobs:
 
       - name: Bagimliliklari Yukle
         run: |
-          pip install requests
-          # En güncel yt-dlp'yi indir ve yetki ver
-          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-          sudo chmod a+rx /usr/local/bin/yt-dlp
+          python -m pip install --upgrade pip
+          pip install requests yt-dlp
 
       - name: Scripti Calistir
         run: python Cloud.py
