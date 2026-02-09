@@ -71,28 +71,61 @@ def read_order_file(file_path):
     return order
 
 # ==================== YOUTUBE STREAM ALMA ====================
+# ... (Üst kısımlar senin orijinal kodunla birebir aynı) ...
+
+# ==================== YOUTUBE STREAM ALMA ====================
+# ... (Üst kısımlar, okuma fonksiyonları aynı kalıyor) ...
+
+# ==================== YOUTUBE STREAM ALMA ====================
 def get_youtube_stream(url, max_retries=2):
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    
     for attempt in range(max_retries):
         try:
             if attempt > 0:
                 time.sleep(1)
                 print(f"   ↻ Yeniden deneme {attempt}/{max_retries}")
-            cmd = ['yt-dlp', '--quiet', '--no-warnings', '--user-agent', user_agent, '--format', 'best[height<=1080]', '--get-url', '--no-playlist', url]
+
+            # 1. ANA KOMUT: Stream linkini alır
+            cmd = [
+                'yt-dlp',
+                '--quiet', '--no-warnings',
+                '--user-agent', user_agent,
+                '--format', 'best[height<=1080]',
+                '--get-url',
+                '--no-playlist',
+                '--geo-bypass', # Coğrafi engeli aşmaya çalışır
+                '--extract-audio', # Bazı bot engellerini aşmak için stream yapısını zorlar
+                url
+            ]
+            
             result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            
             if result.stdout.strip():
                 stream_url = result.stdout.strip()
-                cmd_info = ['yt-dlp', '--quiet', '--no-warnings', '--user-agent', user_agent, '--print', '%(height)s', '--no-playlist', url]
-                result_info = subprocess.run(cmd_info, capture_output=True, text=True, check=True)
-                height = result_info.stdout.strip()
+                
+                # 2. BİLGİ KOMUTU: Çözünürlüğü alır (BURASI DA GÜNCELLENDİ)
+                cmd_info = [
+                    'yt-dlp',
+                    '--quiet', '--no-warnings',
+                    '--user-agent', user_agent,
+                    '--print', '%(height)s',
+                    '--no-playlist',
+                    '--geo-bypass', # Bilgi alırken de engeli aşması için eklendi
+                    url
+                ]
+                
+                try:
+                    result_info = subprocess.run(cmd_info, capture_output=True, text=True, check=True)
+                    height = result_info.stdout.strip()
+                except:
+                    height = "OK" # Bilgi alınamazsa sistem çökmesin, OK yazsın
+                
                 return stream_url, f"{height}p" if height.isdigit() else "OK"
-        except subprocess.CalledProcessError as e:
-            error_msg = e.stderr.strip() if e.stderr else "Bilinmeyen hata"
-            print(f"   ↻ yt-dlp hatası: {error_msg[:80]}")
-            continue
+
         except Exception as e:
-            print(f"   ↻ Genel hata: {str(e)[:50]}")
-            continue
+            continue # Hata olursa bir sonraki denemeye geçer
+    
     return None, None
 
 def process_youtube_channels(youtube_channels_dict):
@@ -292,7 +325,6 @@ def main_process():
     print("\n" + "=" * 50)
     print("🎉 İŞLEM TAMAMLANDI")
     print("=" * 50)
-    # HATA VEREN SATIRLAR BURADA DÜZELTİLDİ:
     cf_durum = "BAŞARILI" if cloudflare_success else "BAŞARISIZ"
     pa_durum = "BAŞARILI" if pythonanywhere_success else "BAŞARISIZ"
     print(f"✅ Cloudflare: {cf_durum}")
