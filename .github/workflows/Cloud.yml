@@ -59,10 +59,9 @@ jobs:
       run: python Cloud.py
     
     - name: Upload generated files
-      uses: actions/upload-artifact@v3
-      with:
-        name: iptv-files
-        path: |
-          TV.m3u
-          *.txt
-        retention-days: 7
+  uses: actions/upload-artifact@v4
+  with:
+    name: iptv-files
+    path: |
+      TV.m3u
+      *.txt
