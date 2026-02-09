@@ -114,7 +114,6 @@ def get_youtube_stream(url, max_retries=2):
                 height = result_info.stdout.strip()
                 
                 return stream_url, f"{height}p" if height.isdigit() else "OK"
- stream_url, f"{height}p" if height.isdigit() else "OK"
                 
         except subprocess.CalledProcessError as e:
             error_msg = e.stderr.strip() if e.stderr else "Bilinmeyen hata"
