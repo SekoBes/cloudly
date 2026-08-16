@@ -1,23 +1,6 @@
-<<<<<<< HEAD
 # TÜM dosya ve klasörleri gizle
 /*
 
 # TEK İSTİSNA - TV/ klasörü ve içindekiler AÇIK
 !/TV/
 !/TV/**
-
-# Diğer her şey kapalı kalsın
-=======
-# Script ve ayar dosyaları
-YouTube.py
-YouTube.bat
-YouTube Kanalları.txt
-token.env
-
-# Diğer her şeyi görmezden gel
-*
-
-# AMA YouTube klasörü KALSIN
-!YouTube/
-!YouTube/**
->>>>>>> 70a0c5e5439ef5bcb8e7cf67833a6d3d27cb4cee
