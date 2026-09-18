@@ -71,6 +71,45 @@ def health():
     return jsonify({"status": "ok"})
 
 
+@app.route("/debug")
+def debug():
+    """Sayfanin gercekte ne gosterdigini anlamak icin: HTML metni + ekran goruntusu (base64)."""
+    dsmart_url = request.args.get("url")
+    if not dsmart_url:
+        return jsonify({"error": "url parametresi gerekli"}), 400
+
+    result = {}
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=["--no-sandbox", "--disable-dev-shm-usage"],
+            )
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                           "AppleWebKit/537.36 (KHTML, like Gecko) "
+                           "Chrome/120.0.0.0 Safari/537.36",
+                locale="tr-TR",
+                viewport={"width": 1280, "height": 720},
+            )
+            page = context.new_page()
+            page.goto(dsmart_url, timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(6000)  # JS'in render etmesi icin biraz bekle
+
+            result["title"] = page.title()
+            result["body_text"] = page.inner_text("body")[:1500]
+
+            screenshot_bytes = page.screenshot()
+            import base64
+            result["screenshot_base64"] = base64.b64encode(screenshot_bytes).decode()
+
+            browser.close()
+    except Exception as e:
+        result["error"] = str(e)
+
+    return jsonify(result)
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=port)
